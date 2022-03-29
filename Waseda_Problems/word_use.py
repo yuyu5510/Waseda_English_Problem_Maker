@@ -3,7 +3,7 @@ word_use = [['abandon', 'ability', 'able', 'abnormal', 'aboard', 'abolish', 'abo
 'accelerate', 'accent', 'accept', 'acceptance', 'access', 'accessible', 'accident', 'accompany', 'accomplish', 'accord', 'adapt',
 'add', 'addict', 'addictive', 'addition', 'adjust', 'admit', 'advent', 'adverse', 'advertise', 'affect', 'agenda', 'agent', 'akin', 
 'alcohol', 'alien', 'allot', 'analogy', 'ancient', 'ankle', 'annoy', 'annual', 'apart', 'ape', 'approach', 'approval', 'armed', 'article', 
-'ascent', 'aside', 'aspect', 'asset', 'assign', 'athlete', 'atom', 'author', 'award', 'awful'],
+'ascent', 'aside', 'aspect', 'asset', 'assign', 'athlete','author', 'award', 'awful'],
 
 ['ban', 'barrier', 'basis', 'bear', 'beast', 'beat', 'behave', 'bend', 'beneath', 'besides', 'bestow', 'betray',
  'beverage', 'bias', 'biology', 'bitter', 'blame', 'bleed', 'bless', 'blink', 'bloom', 'blur', 'board', 'boast',
@@ -60,7 +60,7 @@ word_use = [['abandon', 'ability', 'able', 'abnormal', 'aboard', 'abolish', 'abo
 ['sacred', 'safety', 'saint', 'save', 'say', 'scratch', 'secure', 'self', 'shallow', 'shame', 'sigh',
 'sinful', 'slap', 'smart', 'snore', 'soak', 'sober', 'social', 'sole', 'solid', 'sort', 'spell', 'spot', 
 'stare', 'statue', 'status', 'stiff', 'stir', 'stock', 'story', 'stir', 'static', 'strain', 
-'stingy', 'story', 'strict', 'submit', 'subtle', 'superb', 'survey', 'sword'],
+'stingy', 'story', 'submit', 'subtle', 'superb', 'survey', 'sword'],
 
 ['tackle', 'task', 'tame', 'tax', 'tactics', 'tear', 'tend', 'term', 'test', 'theory', 
 'thus', 'tiny', 'trend', 'trade', 'total', 'toke', 'transform', 'transit', 'trash',
@@ -74,4 +74,4 @@ word_use = [['abandon', 'ability', 'able', 'abnormal', 'aboard', 'abolish', 'abo
 
 ['yawn', 'year', 'yell', 'yield'],
 
-['zeal', 'zealous', 'zero', 'zip']]
+['zeal', 'zero', 'zip']]

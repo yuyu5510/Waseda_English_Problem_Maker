@@ -8,8 +8,11 @@ import numpy as np
 class Waseda:
     def __init__(self):
         #word_useは先頭のアルファベットによって振り分けている二重のリスト
-        #26以下の数字をランダムに選択
-        rand = np.random.randint(26)
+        #24以下の数字をランダムに選択
+        #xから始まる英単語で高校以前で学ぶものがなさそうなので省きました
+        #xから始まる英単語を入れる場合は25を26にして、
+        #word_useにxからはじまる英単語のリストを入れてください
+        rand = np.random.randint(25)
         rand2 = np.random.randint(len(word_use[rand]))
         #答え
         self.ans = word_use[rand][rand2]
@@ -26,12 +29,12 @@ class Waseda:
         synsets = wn.synsets(self.ans)
         #選んだ単語の定義と例文を呼び出して追加
         for i in range(len(synsets)):
-           if self.ans in str(synsets[i]):
+            if self.ans in str(synsets[i]):
         #teachの例文でtaughtが入ってたりすると問題としてふさわしくないし面倒なのでそういうのは切り捨てる
-               ok = False
-               for j in range(len(synsets[i].examples())):
-                   if ok: break
-                   if self.ans in synsets[i].examples()[j]:
+                ok = False
+                for j in range(len(synsets[i].examples())):
+                    if ok: break
+                    if self.ans in synsets[i].examples()[j]:
                         exam = synsets[i].definition()
                         exam += ';  '
                         exam += synsets[i].examples()[j]
@@ -40,10 +43,11 @@ class Waseda:
 
         #例文が複数ある場合、毎回固定だとつまらないのでシャッフルしておく
         np.random.shuffle(self.examples)
-        #例文がひとつもなかった時用に定義だけ追加　もし例文があれば次のpopでこれは弾かれる
+        #例文がひとつもなかった時用に定義だけ追加
         for i in range(len(synsets)):
             if self.ans in str(synsets[i]):
-                self.examples.append(synsets[i].definition())
+                if len(self.examples) == 0:
+                    self.examples.append(synsets[i].definition())
 
         #本家は2個なので2個以上ある場合は2個になるまで削除
         while len(self.examples) > 2:
